@@ -1,5 +1,5 @@
-# Prompt-driven Latent Domain Generalization for Medical Image Classification
-
+# PLDG
+This repo is the official implementation of "Prompt-driven Latent Domain Generalization for Medical Image Classification" 
 WARNING: this repo is still under construction, welcome to raise an issue if you run into any bugs.
 
 ## Introduction
