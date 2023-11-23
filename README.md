@@ -47,10 +47,10 @@ results/exp --hparams '{"lr": 5e-6, "lr_classifier": 5e-5,"batch_size":130,"wd_c
  --use_domain_labels False --loss-disc-weight --num-clustering 4
 
 #Test PLDG on four OOD skin datasets with pompt=10
-#CUDA_VISIBLE_DEVICES=0 python -m domainbed.scripts.test_prompt10 --model_name 'model_name.pkl'
+CUDA_VISIBLE_DEVICES=0 python -m domainbed.scripts.test_prompt10 --model_name 'model_name.pkl'
 
 #Test PLDG on four OOD skin datasets with pompt=4
-#CUDA_VISIBLE_DEVICES=0 python -m domainbed.scripts.test_prompt --model_name 'model_name.pkl'
+CUDA_VISIBLE_DEVICES=0 python -m domainbed.scripts.test_prompt --model_name 'model_name.pkl'
 
 # Training PLDG on three out of four DR classification datasets and testing on the remaining one
 CUDA_VISIBLE_DEVICES=1 python -m domainbed.scripts.train_dr_latent --data_dir=./domainbed/data/ --steps 1000 --dataset Latent_DR_Dataset --test_envs 0 --val_envs 1 \
