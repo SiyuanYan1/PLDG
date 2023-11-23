@@ -22,6 +22,7 @@ employed for more flexible decision margins and mitigates
 the risk of incorrect domain assignments. Extensive experiments on three medical image classification tasks and one
 debiasing task demonstrate that our method can achieve
 comparable or even superior performance than conventional DG algorithms without relying on domain labels.*
+
 ![alt text](method.png)
 
 ## Installation
