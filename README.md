@@ -1,5 +1,4 @@
-# PLDG
-TMI2024: Domain generalization without domain labels  in medical image classification
+# Prompt-driven Latent Domain Generalization for Medical Image Classification
 
 WARNING: this repo is still under construction, welcome to raise an issue if you run into any bugs.
 
