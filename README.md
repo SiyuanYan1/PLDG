@@ -1,5 +1,6 @@
 # PLDG
-This repo is the official implementation of "Prompt-driven Latent Domain Generalization for Medical Image Classification" 
+This repo is the official implementation of TMI2024 paper "Prompt-driven Latent Domain Generalization for Medical Image Classification" 
+
 WARNING: this repo is still under construction, welcome to raise an issue if you run into any bugs.
 
 ## Introduction
