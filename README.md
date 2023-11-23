@@ -38,7 +38,7 @@ Please refer to our paper and its supplementary material for more details about 
 
 ## Training
 
-Our benchmark is modified based on DomainBed, please refer to [DomainBed Readme](https://github.com/facebookresearch/DomainBed) for more details on commands running jobs. 
+Our benchmark is modified based on DomainBed, please refer to [DomainBed Readme](https://github.com/facebookresearch/DomainBed) for more details on commands running jobs. Here are some examples to train and test on the three medical datasets.
 
 ```sh
 # Training PLDG on skin classification
