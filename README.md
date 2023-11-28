@@ -61,7 +61,6 @@ data
 │   ├── gel_bubble
 │   ├── ...
 
-
 ├── DG_DR_Classification
 │   ├──aptos2019-blindness-detection
 │   │   ├──0
@@ -75,8 +74,9 @@ data
 │   │   ├──...
 │   ├──Messidor-2
 │   │   ├──...
-├── camelyon17_v1.0
 
+├── camelyon17_v1.0
+```
 
 
 ## Training
