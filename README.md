@@ -55,16 +55,26 @@ Put each dataset in a folder under the `PLDG/domainbed/data` directory as follow
 ```
 data
 ├── ISIC2019_train
-│   ├── 
-│   │   ├── clean
-│   │   │   ├──ben
-│   │   │   ├──mel
-│   │   ├── dark_corner
-│   │   ├── gel_bubble
-│   │   ├── ...
+│   ├── clean
+│   │   ├──ben
+│   │   ├──mel
+│   ├── dark_corner
+│   ├── gel_bubble
+│   ├── ...
+
 
 ├── DG_DR_Classification
-│   ├── feature
+│   ├──aptos2019-blindness-detection
+│   │   ├──0
+│   │   ├──1
+│   │   ├──2
+│   │   ├──3
+│   │   ├──3
+│   ├──EyePACS
+│   ├──Messidor-1
+│   ├──Messidor-2
+
+
 │   │   ├── --Ly-qjodoIs.npz
 │   │   ├── -0z1P7sw2qs.npz
 │   │   ├── ..
