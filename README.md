@@ -62,12 +62,10 @@ Our benchmark is modified based on DomainBed, please refer to [DomainBed Readme]
 
 Training PLDG on skin classification:
 ```
-python /tools/downloader.py
-```
 CUDA_VISIBLE_DEVICES=0 python -m domainbed.scripts.train_latent_epvt --data_dir=./domainbed/data/ --steps 5900 --dataset DG_Dataset --test_env 0 --algorithm Latent_EPVT --output_dir \
 results/exp --hparams '{"lr": 5e-6, "lr_classifier": 5e-5,"batch_size":130,"wd_classifier": 1e-2, "prompt_dim":4}' --exp 'epvt_5e-6-5e-5_p4' --clustering True \
- --use_domain_labels False --loss-disc-weight --num-clustering 4
-
+ --use_domain_labels False --loss-disc-weight --num-clustering 4``
+```
 
 Test PLDG on four OOD skin datasets with pompt=10
 ```
