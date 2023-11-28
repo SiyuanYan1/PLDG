@@ -36,26 +36,46 @@ pip install -r requirements.txt
 
 ## Preparing datasets
 
-**ISIC2019**: download ISIC2019 training dataset from [here](https://challenge.isic-archive.com/data/#2019)
+**Skin Datasets**: please refer to the repo of our previous [work](https://github.com/SiyuanYan1/EPVT-and-Skin-DG-benchamrk).
 
-**Derm7pt**: download Derm7pt Clinical and Derm7pt Dermoscopic dataset from [here](https://derm.cs.sfu.ca/Welcome.html)
+**Camelyon17 Benchmark**: download the dataset from [here](https://pubmed.ncbi.nlm.nih.gov/30716025/)
 
-**PH2**: download the PH2 dataset from [here](https://www.fc.up.pt/addi/ph2%20database.html)
+**APTOS (DR) Datasets**: download the dataset from [here](https://www.kaggle.com/competitions/aptos2019-blindness-detection/data?select=train_images)
 
-**PAD**: download the PAD-UFES-20 dataset from [here](https://paperswithcode.com/dataset/pad-ufes-20)
+**EyePACS (DR) Datasets**: download the dataset from [here](https://www.kaggle.com/competitions/diabetic-retinopathy-detection/overview)
 
-## Pre-processing datasets
+**Messidor-1 (DR) Datasets**: download the dataset from [here](https://www.adcis.net/en/third-party/messidor/)
 
-Pre-processing the ISIC2019 dataset to construct the artifacts-based domain generalization training dataset, you need to modify path names in the pre-processing file accordingly.
+**Messidor-2 (DR) Datasets**: download the dataset from [here](https://www.adcis.net/en/third-party/messidor2/)
+
+## Data Preparation
+
+Put each dataset in a folder under the `PLDG/domainbed/data` directory as follows:
+
 ```
-python data_proc/grouping.py
+data
+├── ISIC2019_train
+│   ├── 
+│   │   ├── clean
+│   │   │   ├──ben
+│   │   │   ├──mel
+│   │   ├── dark_corner
+│   │   ├── gel_bubble
+│   │   ├── ...
+
+├── DG_DR_Classification
+│   ├── feature
+│   │   ├── --Ly-qjodoIs.npz
+│   │   ├── -0z1P7sw2qs.npz
+│   │   ├── ..
+│   ├── build_rawframes.py
+│   ├── extract_features.py
+│   ├── ..
+├── camelyon17_v1.0
+│   ├── downloader.py
+│   ├── preprocess_videos.py
+│   ├── clip.py
 ```
-
-## Directly accessing all datasets via GoogleDrive
-
-The processed ISIC2019 dataset  and 4 OOD testing datasets are in [GoogleDrive](https://drive.google.com/file/d/12SoMs_44jD4mRT6JEyIfdjBa4Fw07i2m/view?usp=sharing).
-Please refer to our paper and its supplementary material for more details about these datasets.
-
 ## Training
 
 Our benchmark is modified based on DomainBed, please refer to [DomainBed Readme](https://github.com/facebookresearch/DomainBed) for more details on commands running jobs. Here are some examples to train and test on the three medical datasets.
