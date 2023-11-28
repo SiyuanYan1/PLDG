@@ -48,7 +48,6 @@ pip install -r requirements.txt
 
 **Messidor-2 (DR) Datasets**: download the dataset from [here](https://www.adcis.net/en/third-party/messidor2/)
 
-## Data Preparation
 
 Put each dataset in a folder under the `PLDG/domainbed/data` directory as follows:
 
@@ -71,21 +70,15 @@ data
 │   │   ├──3
 │   │   ├──3
 │   ├──EyePACS
+│   │   ├──...
 │   ├──Messidor-1
+│   │   ├──...
 │   ├──Messidor-2
-
-
-│   │   ├── --Ly-qjodoIs.npz
-│   │   ├── -0z1P7sw2qs.npz
-│   │   ├── ..
-│   ├── build_rawframes.py
-│   ├── extract_features.py
-│   ├── ..
+│   │   ├──...
 ├── camelyon17_v1.0
-│   ├── downloader.py
-│   ├── preprocess_videos.py
-│   ├── clip.py
-```
+
+
+
 ## Training
 
 Our benchmark is modified based on DomainBed, please refer to [DomainBed Readme](https://github.com/facebookresearch/DomainBed) for more details on commands running jobs. Here are some examples to train and test on the three medical datasets.
