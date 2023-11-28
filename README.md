@@ -24,7 +24,7 @@ the risk of incorrect domain assignments. Extensive experiments on three medical
 debiasing task demonstrate that our method can achieve
 comparable or even superior performance than conventional DG algorithms without relying on domain labels.*
 
-![alt text](method.png)
+![alt text](images/method.png)
 
 ## Installation
 Create the environment and install packages
