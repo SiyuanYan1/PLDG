@@ -133,5 +133,5 @@ results/exp --hparams '{"lr": 5e-7, "lr_classifier": 5e-7,"batch_size":130,"wd_c
 
 ## Acknowlegdement
 
-This code is built on [DomainBed](https://github.com/facebookresearch/DomainBed), [DoPrompt](https://github.com/zhengzangw/DoPrompt), [DG_SKIN](https://github.com/alceubissoto/artifact-generalization-skin), and [dg_mmld](https://github.com/mil-tokyo/dg_mmld). We thank the authors for sharing their codes.
+This code is built on [DomainBed](https://github.com/facebookresearch/DomainBed), [DoPrompt](https://github.com/zhengzangw/DoPrompt), [EPVT](https://github.com/SiyuanYan1/EPVT-and-Skin-DG-benchamrk), and [dg_mmld](https://github.com/mil-tokyo/dg_mmld). We thank the authors for sharing their codes.
 
