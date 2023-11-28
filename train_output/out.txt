@@ -1,0 +1,300 @@
+Environment:
+	Python: 3.8.15
+	PyTorch: 1.12.1
+	Torchvision: 0.13.1
+	CUDA: 11.3
+	CUDNN: 8302
+	NumPy: 1.23.5
+	PIL: 9.4.0
+Args:
+	algorithm: DoPrompt_group_decompose
+	checkpoint_freq: None
+	data_dir: ./domainbed/data/
+	dataset: DR
+	exp: miccai_project
+	holdout_fraction: 0.2
+	hparams: None
+	hparams_seed: 0
+	ood_vis: False
+	output_dir: train_output
+	restore: None
+	save_model_every_checkpoint: False
+	seed: 0
+	skip_model_save: False
+	steps: 1501
+	task: domain_generalization
+	test_envs: [3]
+	trial_seed: 0
+	uda_holdout_fraction: 0
+	val_envs: [1]
+HParams:
+	attention_dropout: 0.0
+	batch_size: 32
+	class_balanced: False
+	data_augmentation: True
+	im21k: False
+	lambda: 1.0
+	lr: 5e-06
+	lr_classifier: 0.0005
+	lr_project: 0.0001
+	lr_prompt: 0.001
+	nonlinear_classifier: False
+	prompt_dim: 4
+	resnet18: False
+	resnet_dropout: 0.1
+	vit_base_16: True
+	wd_classifier: 0.01
+	wd_project: 1e-05
+	weight_decay: 0.01
+EEEEEEE ['EyePACS', 'Messidor-1', 'Messidor-2', 'aptos2019-blindness-detection']
+num class:  5
+---------------- <domainbed.datasets.DR object at 0x7f41730266a0>
+Val env: Messidor-1
+Test env: aptos2019-blindness-detection
+Val Size: 1200 ， Test Size: 3662
+/home/neuron/anaconda3/envs/prompt/lib/python3.8/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and will be removed in 0.15, please use 'weights' instead.
+  warnings.warn(
+/home/neuron/anaconda3/envs/prompt/lib/python3.8/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and will be removed in 0.15. The current behavior is equivalent to passing `weights=ViT_B_16_Weights.IMAGENET1K_V1`. You can also use `weights=ViT_B_16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Traceback (most recent call last):
+  File "/home/neuron/anaconda3/envs/prompt/lib/python3.8/runpy.py", line 194, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/home/neuron/anaconda3/envs/prompt/lib/python3.8/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/mount/neuron/Lamborghini/dir/pythonProject/TMI/latent_prompt/domainbed/scripts/train_dr_prompt.py", line 272, in <module>
+    for x,y in next(train_minibatches_iterator)]
+  File "/mount/neuron/Lamborghini/dir/pythonProject/TMI/latent_prompt/domainbed/lib/fast_data_loader.py", line 47, in __iter__
+    yield next(self._infinite_iterator)
+  File "/home/neuron/anaconda3/envs/prompt/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 681, in __next__
+    data = self._next_data()
+  File "/home/neuron/anaconda3/envs/prompt/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1359, in _next_data
+    idx, data = self._get_data()
+  File "/home/neuron/anaconda3/envs/prompt/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1325, in _get_data
+    success, data = self._try_get_data()
+  File "/home/neuron/anaconda3/envs/prompt/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1163, in _try_get_data
+    data = self._data_queue.get(timeout=timeout)
+  File "/home/neuron/anaconda3/envs/prompt/lib/python3.8/multiprocessing/queues.py", line 107, in get
+    if not self._poll(timeout):
+  File "/home/neuron/anaconda3/envs/prompt/lib/python3.8/multiprocessing/connection.py", line 257, in poll
+    return self._poll(timeout)
+  File "/home/neuron/anaconda3/envs/prompt/lib/python3.8/multiprocessing/connection.py", line 424, in _poll
+    r = wait([self], timeout)
+  File "/home/neuron/anaconda3/envs/prompt/lib/python3.8/multiprocessing/connection.py", line 931, in wait
+    ready = selector.select(timeout)
+  File "/home/neuron/anaconda3/envs/prompt/lib/python3.8/selectors.py", line 415, in select
+    fd_event_list = self._selector.poll(timeout)
+KeyboardInterrupt
+Error in atexit._run_exitfuncs:
+Traceback (most recent call last):
+  File "/home/neuron/anaconda3/envs/prompt/lib/python3.8/site-packages/wandb/sdk/wandb_manager.py", line 152, in _teardown
+    result = self._service.join()
+  File "/home/neuron/anaconda3/envs/prompt/lib/python3.8/site-packages/wandb/sdk/service/service.py", line 154, in join
+    ret = self._internal_proc.wait()
+  File "/home/neuron/anaconda3/envs/prompt/lib/python3.8/subprocess.py", line 1083, in wait
+    return self._wait(timeout=timeout)
+  File "/home/neuron/anaconda3/envs/prompt/lib/python3.8/subprocess.py", line 1806, in _wait
+    (pid, sts) = self._try_wait(0)
+  File "/home/neuron/anaconda3/envs/prompt/lib/python3.8/subprocess.py", line 1764, in _try_wait
+    (pid, sts) = os.waitpid(self.pid, wait_flags)
+KeyboardInterrupt
+Environment:
+	Python: 3.8.15
+	PyTorch: 1.12.1
+	Torchvision: 0.13.1
+	CUDA: 11.3
+	CUDNN: 8302
+	NumPy: 1.23.5
+	PIL: 9.4.0
+Args:
+	algorithm: SelfReg
+	checkpoint_freq: None
+	data_dir: ./domainbed/data/
+	dataset: DR
+	exp: miccai_project
+	holdout_fraction: 0.2
+	hparams: None
+	hparams_seed: 0
+	ood_vis: False
+	output_dir: train_output
+	restore: None
+	save_model_every_checkpoint: False
+	seed: 0
+	skip_model_save: False
+	steps: 1501
+	task: domain_generalization
+	test_envs: [0]
+	trial_seed: 0
+	uda_holdout_fraction: 0
+	val_envs: [1]
+HParams:
+	attention_dropout: 0.0
+	batch_size: 32
+	class_balanced: False
+	data_augmentation: True
+	im21k: False
+	lambda: 1.0
+	lr: 5e-06
+	lr_classifier: 0.0005
+	lr_project: 0.0001
+	lr_prompt: 0.001
+	nonlinear_classifier: False
+	prompt_dim: 4
+	resnet18: False
+	resnet_dropout: 0.1
+	vit_base_16: True
+	wd_classifier: 0.01
+	wd_project: 1e-05
+	weight_decay: 0.01
+EEEEEEE ['EyePACS', 'Messidor-1', 'Messidor-2', 'aptos2019-blindness-detection']
+num class:  5
+---------------- <domainbed.datasets.DR object at 0x7f97da954730>
+Test env: EyePACS
+Val env: Messidor-1
+Val Size: 1200 ， Test Size: 35108
+/home/neuron/anaconda3/envs/prompt/lib/python3.8/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and will be removed in 0.15, please use 'weights' instead.
+  warnings.warn(
+/home/neuron/anaconda3/envs/prompt/lib/python3.8/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and will be removed in 0.15. The current behavior is equivalent to passing `weights=ViT_B_16_Weights.IMAGENET1K_V1`. You can also use `weights=ViT_B_16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Epoch 000:  | Loss_train: 2.239  | VAL ACC: 0.354 | Training time: 0:00:24
+Epoch 001:  | Loss_train: 1.509  | VAL ACC: 0.455 | Training time: 0:00:12
+Epoch 002:  | Loss_train: 1.476  | VAL ACC: 0.455 | Training time: 0:00:13
+Epoch 003:  | Loss_train: 1.539  | VAL ACC: 0.457 | Training time: 0:00:13
+Epoch 004:  | Loss_train: 1.325  | VAL ACC: 0.455 | Training time: 0:00:13
+Epoch 005:  | Loss_train: 1.390  | VAL ACC: 0.458 | Training time: 0:00:13
+Epoch 006:  | Loss_train: 1.484  | VAL ACC: 0.458 | Training time: 0:00:12
+Epoch 007:  | Loss_train: 1.309  | VAL ACC: 0.482 | Training time: 0:00:13
+Epoch 008:  | Loss_train: 1.214  | VAL ACC: 0.491 | Training time: 0:00:12
+Epoch 009:  | Loss_train: 1.431  | VAL ACC: 0.477 | Training time: 0:00:12
+Epoch 010:  | Loss_train: 1.334  | VAL ACC: 0.487 | Training time: 0:00:11
+Epoch 011:  | Loss_train: 1.337  | VAL ACC: 0.528 | Training time: 0:00:12
+Epoch 012:  | Loss_train: 1.336  | VAL ACC: 0.516 | Training time: 0:00:11
+Epoch 013:  | Loss_train: 1.275  | VAL ACC: 0.538 | Training time: 0:00:14
+Epoch 014:  | Loss_train: 1.347  | VAL ACC: 0.497 | Training time: 0:00:13
+Epoch 015:  | Loss_train: 1.356  | VAL ACC: 0.521 | Training time: 0:00:13
+Epoch 016:  | Loss_train: 1.399  | VAL ACC: 0.570 | Training time: 0:00:13
+Epoch 017:  | Loss_train: 1.359  | VAL ACC: 0.502 | Training time: 0:00:13
+Epoch 018:  | Loss_train: 1.602  | VAL ACC: 0.540 | Training time: 0:00:13
+Epoch 019:  | Loss_train: 1.200  | VAL ACC: 0.572 | Training time: 0:00:13
+Epoch 020:  | Loss_train: 1.099  | VAL ACC: 0.571 | Training time: 0:00:13
+Epoch 021:  | Loss_train: 1.425  | VAL ACC: 0.534 | Training time: 0:00:12
+Epoch 022:  | Loss_train: 1.194  | VAL ACC: 0.545 | Training time: 0:00:14
+Epoch 023:  | Loss_train: 1.340  | VAL ACC: 0.601 | Training time: 0:00:12
+Epoch 024:  | Loss_train: 1.213  | VAL ACC: 0.562 | Training time: 0:00:13
+Epoch 025:  | Loss_train: 1.144  | VAL ACC: 0.587 | Training time: 0:00:12
+Epoch 026:  | Loss_train: 1.374  | VAL ACC: 0.593 | Training time: 0:00:14
+Epoch 027:  | Loss_train: 1.304  | VAL ACC: 0.547 | Training time: 0:00:14
+Epoch 028:  | Loss_train: 1.347  | VAL ACC: 0.603 | Training time: 0:00:13
+Epoch 029:  | Loss_train: 1.192  | VAL ACC: 0.569 | Training time: 0:00:13
+Epoch 030:  | Loss_train: 1.162  | VAL ACC: 0.585 | Training time: 0:00:13
+Epoch 031:  | Loss_train: 1.116  | VAL ACC: 0.553 | Training time: 0:00:13
+Epoch 032:  | Loss_train: 1.352  | VAL ACC: 0.600 | Training time: 0:00:14
+Epoch 033:  | Loss_train: 1.223  | VAL ACC: 0.573 | Training time: 0:00:13
+Epoch 034:  | Loss_train: 1.279  | VAL ACC: 0.578 | Training time: 0:00:14
+Traceback (most recent call last):
+  File "/home/neuron/anaconda3/envs/prompt/lib/python3.8/runpy.py", line 194, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/home/neuron/anaconda3/envs/prompt/lib/python3.8/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/mount/neuron/Lamborghini/dir/pythonProject/TMI/latent_prompt/domainbed/scripts/train_dr.py", line 274, in <module>
+    step_vals = algorithm.update(minibatches_device, uda_device)
+  File "/mount/neuron/Lamborghini/dir/pythonProject/TMI/latent_prompt/domainbed/algorithms.py", line 1304, in update
+    self.optimizer.step()
+  File "/home/neuron/anaconda3/envs/prompt/lib/python3.8/site-packages/torch/optim/optimizer.py", line 113, in wrapper
+    return func(*args, **kwargs)
+  File "/home/neuron/anaconda3/envs/prompt/lib/python3.8/site-packages/torch/autograd/grad_mode.py", line 27, in decorate_context
+    return func(*args, **kwargs)
+  File "/home/neuron/anaconda3/envs/prompt/lib/python3.8/site-packages/torch/optim/adamw.py", line 161, in step
+    adamw(params_with_grad,
+  File "/home/neuron/anaconda3/envs/prompt/lib/python3.8/site-packages/torch/optim/adamw.py", line 218, in adamw
+    func(params,
+  File "/home/neuron/anaconda3/envs/prompt/lib/python3.8/site-packages/torch/optim/adamw.py", line 309, in _single_tensor_adamw
+    denom = (exp_avg_sq.sqrt() / bias_correction2_sqrt).add_(eps)
+KeyboardInterrupt
+Error in atexit._run_exitfuncs:
+Traceback (most recent call last):
+  File "/home/neuron/anaconda3/envs/prompt/lib/python3.8/subprocess.py", line 1083, in wait
+    return self._wait(timeout=timeout)
+  File "/home/neuron/anaconda3/envs/prompt/lib/python3.8/subprocess.py", line 1806, in _wait
+    (pid, sts) = self._try_wait(0)
+  File "/home/neuron/anaconda3/envs/prompt/lib/python3.8/subprocess.py", line 1764, in _try_wait
+    (pid, sts) = os.waitpid(self.pid, wait_flags)
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/neuron/anaconda3/envs/prompt/lib/python3.8/site-packages/wandb/sdk/wandb_manager.py", line 152, in _teardown
+    result = self._service.join()
+  File "/home/neuron/anaconda3/envs/prompt/lib/python3.8/site-packages/wandb/sdk/service/service.py", line 154, in join
+    ret = self._internal_proc.wait()
+  File "/home/neuron/anaconda3/envs/prompt/lib/python3.8/subprocess.py", line 1096, in wait
+    self._wait(timeout=sigint_timeout)
+  File "/home/neuron/anaconda3/envs/prompt/lib/python3.8/subprocess.py", line 1800, in _wait
+    time.sleep(delay)
+KeyboardInterrupt
+Environment:
+	Python: 3.8.15
+	PyTorch: 1.12.1
+	Torchvision: 0.13.1
+	CUDA: 11.3
+	CUDNN: 8302
+	NumPy: 1.23.5
+	PIL: 9.4.0
+Args:
+	algorithm: CORAL
+	checkpoint_freq: None
+	data_dir: ./domainbed/data/
+	dataset: DR
+	exp: miccai_project
+	holdout_fraction: 0.2
+	hparams: None
+	hparams_seed: 0
+	ood_vis: False
+	output_dir: train_output
+	restore: None
+	save_model_every_checkpoint: False
+	seed: 0
+	skip_model_save: False
+	steps: 1501
+	task: domain_generalization
+	test_envs: [1]
+	trial_seed: 0
+	uda_holdout_fraction: 0
+	val_envs: [3]
+HParams:
+	attention_dropout: 0.0
+	batch_size: 32
+	class_balanced: False
+	data_augmentation: True
+	im21k: False
+	lr: 5e-06
+	mmd_gamma: 1.0
+	nonlinear_classifier: False
+	resnet18: False
+	resnet_dropout: 0.1
+	vit_base_16: True
+	weight_decay: 0.01
+EEEEEEE ['EyePACS', 'Messidor-1', 'Messidor-2', 'aptos2019-blindness-detection']
+num class:  5
+---------------- <domainbed.datasets.DR object at 0x7f54276efb20>
+Test env: Messidor-1
+Val env: aptos2019-blindness-detection
+Val Size: 3662 ， Test Size: 1200
+/home/neuron/anaconda3/envs/prompt/lib/python3.8/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and will be removed in 0.15, please use 'weights' instead.
+  warnings.warn(
+/home/neuron/anaconda3/envs/prompt/lib/python3.8/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and will be removed in 0.15. The current behavior is equivalent to passing `weights=ViT_B_16_Weights.IMAGENET1K_V1`. You can also use `weights=ViT_B_16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Traceback (most recent call last):
+  File "/home/neuron/anaconda3/envs/prompt/lib/python3.8/runpy.py", line 194, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/home/neuron/anaconda3/envs/prompt/lib/python3.8/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/mount/neuron/Lamborghini/dir/pythonProject/TMI/latent_prompt/domainbed/scripts/train_dr.py", line 220, in <module>
+    algorithm = algorithm_class(dataset.input_shape, dataset.num_classes,
+  File "/mount/neuron/Lamborghini/dir/pythonProject/TMI/latent_prompt/domainbed/algorithms.py", line 870, in __init__
+    super(CORAL, self).__init__(input_shape, num_classes,
+  File "/mount/neuron/Lamborghini/dir/pythonProject/TMI/latent_prompt/domainbed/algorithms.py", line 782, in __init__
+    super(AbstractMMD, self).__init__(input_shape, num_classes, num_domains,
+  File "/mount/neuron/Lamborghini/dir/pythonProject/TMI/latent_prompt/domainbed/algorithms.py", line 144, in __init__
+    {'params': self.classifier.parameters(), 'lr': self.hparams["lr_classifier"], 'weight_decay': self.hparams['wd_classifier']}
+KeyError: 'lr_classifier'
