@@ -119,7 +119,14 @@ results/exp --hparams '{"lr": 5e-7, "lr_classifier": 5e-7,"batch_size":130,"wd_c
 
 
 ## Citation
-
+```bibtex
+@article{yan2024prompt,
+  title={Prompt-driven Latent Domain Generalization for Medical Image Classification},
+  author={Yan, Siyuan and Liu, Chi and Yu, Zhen and Ju, Lie and Mahapatra, Dwarikanath and Betz-Stablein, Brigid and Mar, Victoria and Janda, Monika and Soyer, Peter and Ge, Zongyuan},
+  journal={arXiv preprint arXiv:2401.03002},
+  year={2024}
+}
+```
 ```bibtex
 @inproceedings{yan2023epvt,
   title={EPVT: Environment-Aware Prompt Vision Transformer for Domain Generalization in Skin Lesion Recognition},
