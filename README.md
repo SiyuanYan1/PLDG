@@ -1,6 +1,8 @@
 # PLDG
 This repo is the official implementation of the paper "Prompt-driven Latent Domain Generalization for Medical Image Classification".
-
+[[`Journal submission`](https://arxiv.org/pdf/2401.03002.pdf)]
+[[`Previous MICCAI paper`](https://link.springer.com/chapter/10.1007/978-3-031-43990-2_24)]
+[[`BibTex`](#citation)]
 WARNING: This repo is still under construction, the complete code will be released after the paper is accepted.
 
 ## Introduction
