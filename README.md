@@ -4,7 +4,7 @@ This repo is the official implementation of the paper "Prompt-driven Latent Doma
 [[`conference`](https://link.springer.com/chapter/10.1007/978-3-031-43990-2_24)]
 [[`BibTex`](#citation)]
 
-WARNING: This repo is still under construction, the complete code will be released after the paper is accepted.
+
 
 ## Introduction
 **[abstract]** *Deep learning models for medical image analysis easily suffer from distribution shifts caused by dataset
