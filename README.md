@@ -123,17 +123,22 @@ CUDA_VISIBLE_DEVICES=0 python -m domainbed.scripts.test_prompt --model_name 'mod
 ---> 
 
 ## Citation
-```bibtex
-@misc{yan2024generalpurposemultimodalfoundationmodel,
-      title={A General-Purpose Multimodal Foundation Model for Dermatology}, 
-      author={Siyuan Yan and Zhen Yu and Clare Primiero and Cristina Vico-Alonso and Zhonghua Wang and Litao Yang and Philipp Tschandl and Ming Hu and Gin Tan and Vincent Tang and Aik Beng Ng and David Powell and Paul Bonnington and Simon See and Monika Janda and Victoria Mar and Harald Kittler and H. Peter Soyer and Zongyuan Ge},
-      year={2024},
-      eprint={2410.15038},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2410.15038}, 
+@article{yan2024prompt,
+  title={Prompt-driven Latent Domain Generalization for Medical Image Classification},
+  author={Yan, Siyuan and Liu, Chi and Yu, Zhen and Ju, Lie and Mahapatra, Dwarikanath and Betz-Stablein, Brigid and Mar, Victoria and Janda, Monika and Soyer, Peter and Ge, Zongyuan},
+  journal={arXiv preprint arXiv:2401.03002},
+  year={2024}
 }
 ```
+```bibtex
+@inproceedings{yan2023epvt,
+  title={EPVT: Environment-Aware Prompt Vision Transformer for Domain Generalization in Skin Lesion Recognition},
+  author={Yan, Siyuan and Liu, Chi and Yu, Zhen and Ju, Lie and Mahapatra, Dwarikanath and Mar, Victoria and Janda, Monika and Soyer, Peter and Ge, Zongyuan},
+  booktitle={International Conference on Medical Image Computing and Computer-Assisted Intervention},
+  pages={249--259},
+  year={2023},
+  organization={Springer}
+}
 
 ## Acknowlegdement
 
