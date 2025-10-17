@@ -123,6 +123,7 @@ CUDA_VISIBLE_DEVICES=0 python -m domainbed.scripts.test_prompt --model_name 'mod
 ---> 
 
 ## Citation
+```bibtex
 @article{yan2024prompt,
   title={Prompt-driven Latent Domain Generalization for Medical Image Classification},
   author={Yan, Siyuan and Liu, Chi and Yu, Zhen and Ju, Lie and Mahapatra, Dwarikanath and Betz-Stablein, Brigid and Mar, Victoria and Janda, Monika and Soyer, Peter and Ge, Zongyuan},
@@ -130,6 +131,7 @@ CUDA_VISIBLE_DEVICES=0 python -m domainbed.scripts.test_prompt --model_name 'mod
   year={2024}
 }
 ```
+
 ```bibtex
 @inproceedings{yan2023epvt,
   title={EPVT: Environment-Aware Prompt Vision Transformer for Domain Generalization in Skin Lesion Recognition},
@@ -139,6 +141,7 @@ CUDA_VISIBLE_DEVICES=0 python -m domainbed.scripts.test_prompt --model_name 'mod
   year={2023},
   organization={Springer}
 }
+、、、
 
 ## Acknowlegdement
 
