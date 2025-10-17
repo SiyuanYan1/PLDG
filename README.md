@@ -141,7 +141,7 @@ CUDA_VISIBLE_DEVICES=0 python -m domainbed.scripts.test_prompt --model_name 'mod
   year={2023},
   organization={Springer}
 }
-、、、
+```
 
 ## Acknowlegdement
 
